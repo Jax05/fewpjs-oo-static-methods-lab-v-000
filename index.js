@@ -6,9 +6,8 @@ class Formatter {
     return string.replace(/[^a-z' -]/ig, "");
   }
   static titleize(string){
-    // let str = Formatter.capitalize(string)
-    let str = string.split(' ')
-    let ans = str[0]
+    let str = string.split(' ');
+    let title = str[0];
     for(let i = 1; i < str.length; i++){
       if (str[i] == 'the'||
           str[i] == 'a'||
@@ -20,12 +19,12 @@ class Formatter {
           str[i] == 'at'||
           str[i] == 'by'||
           str[i] == 'from'){
-        ans += " " + str[i]
+        title += " " + str[i]
       }
       else{
-        ans += " " + Formatter.capitalize(str[i])
+        title += " " + Formatter.capitalize(str[i])
       }
     }
-    return Formatter.capitalize(ans)
+    return Formatter.capitalize(title)
   }
 }
