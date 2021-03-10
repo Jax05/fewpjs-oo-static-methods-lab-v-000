@@ -26,6 +26,6 @@ class Formatter {
         ans += " " + Formatter.capitalize(str[i])
       }
     }
-    return ans
+    return Formatter.capitalize(ans)
   }
 }
