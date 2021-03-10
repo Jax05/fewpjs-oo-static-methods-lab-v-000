@@ -7,7 +7,7 @@ class Formatter {
   }
   static titleize(string){
     // let str = Formatter.capitalize(string)
-    str = str.split(' ')
+    let str = string.split(' ')
     let ans = str[0]
     for(let i = 1; i < str.length; i++){
       if (str[i] == 'the'||
